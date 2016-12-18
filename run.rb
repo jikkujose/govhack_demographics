@@ -4,7 +4,7 @@ require_relative './dubai_hackathon.rb'
 require 'json'
 
 module DubaiHackathon
-  def self.update
+  def self.download
     countries =  DubaiHackathon::Members.new
       .list
       .map(&:country)
@@ -19,9 +19,14 @@ module DubaiHackathon
     'country_data = ' + hist.map { |k, v| [k, v] }.unshift(['Country', 'Participants']).to_s
   end
 
-  def self.rebuild_map
+  def self.write_map_data
     File.open('./docs/data.js', 'w') { |f| f.write map_data }
+  end
+
+  def self.update
+    download
+    write_map_data
   end
 end
 
-DubaiHackathon::rebuild_map
+DubaiHackathon::update
