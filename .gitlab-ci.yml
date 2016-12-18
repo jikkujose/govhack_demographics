@@ -1,7 +1,6 @@
 pages:
   stage: deploy
   script:
-  - echo 'Nothing to do...'
   - mv docs public
   artifacts:
     paths:
