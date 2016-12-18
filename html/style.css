@@ -1,0 +1,44 @@
+body, html, container {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body, html, container {
+  display: flex;
+
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #232323;
+}
+
+.title{
+  font-size: 23px;
+  padding: 20px;
+  padding-left: 0px;
+  padding-bottom: 5px;
+  color: #fcfcfc;
+  font-family: Verdana;
+}
+
+.subtitle{
+  font-size: 16px;
+  padding-bottom: 19px;
+  color: #bbbbbb;
+  font-family: Verdana;
+}
+
+.footer{
+  font-size: 12px;
+  padding: 20px;
+  padding-left: 0px;
+  color: #999999;
+  font-family: Verdana;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+  cursor: hand;
+}
