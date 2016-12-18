@@ -20,7 +20,7 @@ module DubaiHackathon
   end
 
   def self.rebuild_map
-    File.open('./html/data.js', 'w') { |f| f.write map_data }
+    File.open('./docs/data.js', 'w') { |f| f.write map_data }
   end
 end
 
