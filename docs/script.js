@@ -21,7 +21,7 @@ function updateMeta() {
     meta.total +
     '</b> participants from <b>' +
     meta.countries +
-    '</b> countries. Updated at <b>' +
+    '</b> countries. Updated on <b>' +
     meta.updated_at +
     '</b>'
   writeIntoClass('meta', message);
