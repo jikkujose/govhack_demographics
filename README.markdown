@@ -1,3 +1,3 @@
-# Dubai Hackathon Contest Map
+# Participant Demographics for Blockchain GovHack, Dubai
 
-Particpant demographics visualization on Google Maps
+Simple visualization on Google Maps from Slack data.
