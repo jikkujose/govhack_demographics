@@ -50,5 +50,3 @@ module DubaiHackathon
     write_map_data
   end
 end
-
-DubaiHackathon::update
