@@ -33,12 +33,19 @@ body, html, container {
   font-size: 12px;
   padding: 20px;
   padding-left: 0px;
+  padding-right: 0px;
   color: #999999;
   font-family: Verdana;
+  display: flex;
+  justify-content: space-between;
 }
 
-.footer a {
+.made_using a {
   text-decoration: none;
   color: white;
   cursor: hand;
+}
+
+.meta {
+  justify-content: right;
 }
