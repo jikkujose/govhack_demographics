@@ -11,7 +11,8 @@ module DubaiHackathon
       .compact
 
     hist = DubaiHackathon::histogram countries
-    DubaiHackathon::write_as_yaml file_name: 'histogram.yml', content: hist
+    modified_histogram = DubaiHackathon::adjust_for_canada(hist)
+    DubaiHackathon::write_as_yaml file_name: 'histogram.yml', content: modified_histogram
   end
 
   def self.histogram_hash
